@@ -21,7 +21,7 @@ function mountainSearch(){
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
   xobj.open('GET', 'scripts/mountain.json', false);
-  xobj.setRequestHeader("Access-Control-Allow-Origin", "*");
+  //xobj.setRequestHeader("Access-Control-Allow-Origin", "*");
   xobj.onreadystatechange= function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
           avgCal(xobj.responseText);
